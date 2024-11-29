@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="icon" href="img/1-removebg-preview.png" />
+    <!-- LINKE BOOTSTRAP  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- LINKE FONTAWESOME  -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+    <!-- LINKE CSS FILE  -->
+    <link rel="stylesheet" href="./css/style.css">
+
+
+
+</head>
+
+<body style="background-color:#EDDFE0">
+    <main>
+        <div class="container">
+            <h1 class="text-center py-3 position-relative">Bookmarker</h1>
+
+
+            <div class="inputWrapper w-100 p-3 d-flex align-items-center flex-column mt-5 py-5 ">
+                <h2>
+                    <i class="fa-regular fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-regular fa-bookmark"></i>
+                </h2>
+                <div class="site-name w-100 d-flex flex-column justify-content-center">
+                    <label for="bookmarkName" class="pb-2 fw-semibold">
+                        <i class="fa-solid fa-book-bookmark pe-2"></i>
+                        Site Name</label>
+                    <input type="text" placeholder="Bookmark Name" class="form-control" id="bookmarkName" />
+                </div>
+
+
+                <div class="site-url w-100 d-flex flex-column justify-content-center mt-5">
+                    <label for="bookmarkURL" class="pb-2 fw-semibold">
+                        <i class="fa-solid fa-link pe-2"></i>Site URL</label>
+
+                    <input type="url" placeholder="Website URL" class="form-control" id="bookmarkURL" />
+                </div>
+
+                <button type="button" class="btn btn-danger my-4 w-25" onclick="addBookmark()">Submit</button>
+            </div>
+
+            <table class="table mt-4 text-center bg-light">
+                <thead>
+                <tr>
+                    <th class="text-capitalize">Index</th>
+                    <th class="text-capitalize">Website</th>
+                    <th class="text-capitalize">Visit</th>
+                    <th class="text-capitalize">Delete</th>
+
+                </tr>
+            </thead>
+                <tbody id="tableContent">
+              
+                </tbody>
+            </table>
+
+
+        </div>
+    </main>
+
+
+
+
+
+    <!-- LINK BOOTSTRAP  -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

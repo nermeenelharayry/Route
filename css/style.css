@@ -1,0 +1,28 @@
+h1 {
+    font-size: 50px;
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400px;
+}
+h1::before{
+    content: "";
+    position: absolute;
+    width: 22%;
+    height: 22%;
+    bottom: 15px;
+    background: linear-gradient(180deg, rgba(219,181,181,1) 55%, rgba(234,224,218,1) 92%);
+    transition: height 350ms;
+    z-index: -1;
+    -webkit-transition: height 350ms;
+    -moz-transition: height 350ms;
+    -ms-transition: height 350ms;
+    -o-transition: height 350ms;
+}
+h1:hover::before{
+    height: 53%;
+}
+
+.inputWrapper h2{
+    background: linear-gradient(90deg, rgba(246,200,200,0.8519782913165266) 50%, rgba(247,213,196,1) 53%);
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+}
